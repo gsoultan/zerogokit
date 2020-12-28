@@ -38,6 +38,6 @@ func handleKey(key interface{}) string {
 	return key.(string)
 }
 
-func NewZeroGokit(logger zerolog.Logger, level zerolog.Level) log2.Logger {
+func New(logger zerolog.Logger, level zerolog.Level) log2.Logger {
 	return &basicZeroGokit{logger: logger, level: level}
 }
